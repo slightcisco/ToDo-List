@@ -1,6 +1,7 @@
 // Each itme should look like this
 // <li><input type="checkBox"> <span>Write this</span></li>
 
+
 function addNewItem(list, itemText) {
   var listItem = document.createElement("li");
   var checkBox = document.createElement("input");
@@ -17,6 +18,12 @@ function addNewItem(list, itemText) {
 
 var inItemText = document.getElementById("inItemText");
 inItemText.focus();
+
+//Retrieving data:
+var text = localStorage.getItem("testJSON");
+var obj = JSON.parse(text);
+
+alert(obj.name);
 
 var btnNew = document.getElementById('btnAdd');
 inItemText.onkeyup = function(e){
