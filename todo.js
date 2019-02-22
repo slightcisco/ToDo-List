@@ -9,8 +9,8 @@ function addNewItem(list, itemText) {
   span.innerText = itemText;
 
 
-  list.appendChild(checkBox)
-  list.appendChild(span);
+  listItem.appendChild(checkBox)
+  listItem.appendChild(span);
   list.appendChild(listItem);
 
 };
